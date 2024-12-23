@@ -1,25 +1,36 @@
 import Image from "next/image";
+import React from "react";
 import { Header } from "../../header/Header";
+import { useTranslations } from "next-intl";
 
-export default function MainSection() {
+interface HeaderProps {
+    onOpenModal: () => void;
+  }
+
+const MainSection: React.FC<HeaderProps> = ({ onOpenModal }) => {
+    const t = useTranslations("MainSection");
   return (
-    <div className="bg-[#f3fffd] h-[1193px] relative">
-        <div className="bg-[url('/bg_truck.png')] bg-cover bg-center h-screen">
-            <Header/>
-            <h1 className="text-[70px] text-white text-center w-[850px] mx-auto mt-[133px] font-montserrat font-extrabold leading-[90px]">Цифровая платформа <br /> для грузоперевозок</h1>
-            <div className="text-[30px] text-white text-center w-[800px] mx-auto mt-[40px] font-medium ">Экосистема сервисов для транспортной логистики<br />Экспорт | Импорт</div>
-        </div>
-        <div className="flex justify-center gap-[80px] absolute top-[875px] left-[50%] translate-x-[-50%]">
-            <div className="w-[328px] h-[254px] bg-white p-[40px] flex flex-col items-center shadow-2xl">
-                <Image src="/handshake.svg" alt="truck" width={75} height={75}/>
-                <div className="text-[24px] font-[600] text-center text-black leading-[32px] mt-3">
-                    Более 6 000 перевозчиков уже работают с нами
-                </div>
+    <div className="bg-[#f3fffd] lg:min-h-[1000px] lg:pb-[300px] md:pb-[200px] pb-[220px]">
+        <div className="bg-[url('/bg_truck.png')] bg-cover bg-center  h-screen relative">
+            <Header onOpenModal={onOpenModal}/>
+            <div className="flex flex-col items-center justify-center h-screen pb-[300px]">
+                <h1 className="md:text-[40px] xl:text-[70px] lg:text-[50px] text-[40px] text-white text-center lg:w-[800px] md:w-[550px] mx-auto font-montserrat font-extrabold xl:leading-[90px] lg:leading-[60px]">{t('title')}</h1>
+                <div className="xl:text-[30px] lg:text-[25px] md:text-[23px]  text-[20px] text-white text-center xl:w-[800px] lg:w-[600px] md:w-[550px] mx-auto md:mt-[40px] mt-[20px] font-medium ">{t('subtitle')}</div>
             </div>
-            <div className="w-[328px] h-[254px] bg-white  p-[40px] flex flex-col items-center shadow-2xl">
-                <Image src="/truck.svg" alt="truck" width={75} height={75}/>
-                <div className="text-[24px] font-[600] text-center text-black leading-[32px] mt-3">
-                    Свыше 100 000 рейсов в год
+        </div>
+        <div className="relative">
+            <div className="flex justify-center  gap-[80px] absolute lg:bottom-[-210px] md:bottom-[-150px] bottom-[-150px] left-[50%] translate-x-[-50%]">
+                <div className="lg:w-[328px] lg:h-[254px] md:w-[250px] md:h-[200px] w-[140px] h-[180px] bg-white lg:p-[40px] md:p-[20px] flex flex-col items-center shadow-2xl">
+                    <Image className="lg:w-[75px] lg:h-[75px] md:w-[65px] md:h-[65px]" src="/handshake.svg" alt="truck" width={75} height={75}/>
+                    <div className="lg:text-[24px] md:text-[18px] text-[13px] font-[600] text-center text-black lg:leading-[32px] md:leading-[22px] mt-3">
+                        {t('stats.0.text')}
+                    </div>
+                </div>
+                <div className="lg:w-[328px] lg:h-[254px] md:w-[250px] md:h-[200px] w-[140px] h-[180px] bg-white  lg:p-[40px] md:p-[20px] flex flex-col items-center  shadow-2xl">
+                    <Image className="lg:w-[75px] lg:h-[75px] md:w-[65px] md:h-[65px]" src="/truck.svg" alt="truck" width={75} height={75}/>
+                    <div className="lg:text-[24px] md:text-[18px] text-[13px] font-[600] text-center text-black lg:leading-[32px] md:leading-[22px] md:w-[200px] mt-3">
+                    {t('stats.1.text')}
+                    </div>
                 </div>
             </div>
         </div>
@@ -27,3 +38,5 @@ export default function MainSection() {
    
   );
 }
+
+export default MainSection

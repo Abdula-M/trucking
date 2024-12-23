@@ -1,15 +1,30 @@
 import Image from "next/image";
-export const Header = () => {
+import React from "react";
+import { useTranslations } from "next-intl";
+import  LanguageSwitcher  from "../languageSwitcher/LanguageSwitcher";
+
+interface HeaderProps {
+    onOpenModal: () => void;
+  }
+
+export const Header: React.FC<HeaderProps> = ({ onOpenModal }) => {
+    const t = useTranslations("Header");
    return (
-    <div className="py-7 px-24">
+    <div className="md:py-7 py-2 lg:px- md:px-[50px] px-[20px]">
         <ol className="flex justify-between items-center">
-            <li><Image src="/logo.svg" alt="logo" width={93} height={48}/></li>
-            <li className="rounded-[6px] border-2 border-[#05caa5] relative">
-                <Image className="absolute top-[12px] left-3" src="/Search.svg" alt="search" width={20} height={20}/>
-                <input className="font-bold w-[400px] h-[45px] rounded-[6px] border-0 outline-0 bg-transparent cursor-text pl-10  text-white" type="text" />
-                <button className="w-[95px] h-[45px] bg-[#05caa5]  text-white font-bold">Найти</button>
-            </li>
-            <li><button className="w-[178px] h-[52px] bg-[#05caa5] rounded-[6px] text-white font-bold">Регистрация</button></li>
+            <li><Image className="md:w-[76px] md:h-[40px] lg:w-[83px] lg:h-[40px] xl:w-[93px] xl:h-[48px] w-[60px] h-[40px]" src="/logo.svg" alt="logo" width={93} height={48}/></li>
+            <div className="flex  md:flex-row justify-between items-center md:gap-7 gap-3">
+                <li><LanguageSwitcher /></li>
+                <li>
+                    <button onClick={() => onOpenModal()} className="test md:block hidden md:h-[42px] md:w-[152px] lg:w-[178px] xl:h-[52px] lg:h-[40px] h-[30px] w-[160px] bg-[#05caa5] rounded-[6px] text-white md:text-[16px] text-[16px] font-bold">
+                        {t('orderL')}
+                    </button>
+                    <button onClick={() => onOpenModal()} className="md:hidden block h-[30px] w-[85px] bg-[#05caa5] rounded-[6px] text-white md:text-[16px] text-[16px] font-bold">
+                        {t('order')}
+                    </button>
+                </li>
+            </div>
+            
         </ol>
     </div>
    )

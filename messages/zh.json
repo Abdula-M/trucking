@@ -1,0 +1,97 @@
+{
+  "Header": {
+    "order": "订购",
+    "orderL": "联系我们"
+  },
+  "MainSection": {
+    "title": "货运数字平台",
+    "subtitle": "运输物流服务生态系统\n出口 | 进口",
+    "stats": [
+      {
+        "text": "超过 6,000 家承运商已与我们合作"
+      },
+      {
+        "text": "每年超过 100,000 趟运输"
+      }
+    ]
+  },
+  "ServicesSection": {
+    "title": "公司服务",
+    "btn": "了解更多",
+    "services": [
+      {
+        "title": "专业设备",
+        "description": "用于特殊用途的设备"
+      },
+      {
+        "title": "机械设备",
+        "description": "\u2022 快速解决紧急运输需求 <br />\u2022 三种类型的拍卖：降价拍卖、首选同意拍卖、无起拍价拍卖"
+      },
+      {
+        "title": "车辆",
+        "description": "\u2022 合同条款记录与跟踪 <br />\u2022 物流流程自动化 <br />\u2022 针对特定任务的灵活定制选项"
+      },
+      {
+        "title": "其他服务...",
+        "description": "所有类型的跟踪方法：<br />\u2022 车载设备 <br />\u2022 GSM 通信 <br />\u2022 移动应用程序"
+      }
+    ],
+    "posts": [
+      {
+        "title": "运输招标",
+        "description": "确保预算控制与执行（TMS）<br />\n强大的分析模块 <br />\n端到端流程“采购-执行”<br />\n决策独立性 <br />\n仅与经过验证的承运商合作"
+      },
+      {
+        "title": "运输管理系统（TMS）",
+        "description": "从采购到付款的全流程控制 <br />\n产品在 TMS 生态系统中的无缝集成 <br />\n订单状态在线跟踪 <br />\n文档工作流管理 <br />\n快速处理异常情况"
+      },
+      {
+        "title": "货物追踪",
+        "description": "与客户的 ERP 系统集成 <br />\n订单分配自动化 <br />\n状态更新追踪 <br />\n灵活的定制选项 <br />\n物流流程审计"
+      }
+    ]
+  },
+  "ProductSection": {
+    "title": "平台产品",
+    "products": [
+      {
+        "title": "出口",
+        "description": "我们的服务帮助将商品出口到多个国家，提供高效的物流解决方案并确保符合所有国际标准。"
+      },
+      {
+        "title": "拖拉机",
+        "description": "我们提供高品质的拖拉机，确保其在农业和建筑项目中的可靠性能，最大限度地提高生产效率。"
+      },
+      {
+        "title": "机械设备",
+        "description": "我们的生产机械保证精度、耐用性和高效率，有助于提升产品质量。"
+      },
+      {
+        "title": "制造",
+        "description": "我们使用现代技术和创新方法生产各种商品，确保高品质和具有竞争力的价格。"
+      }
+    ]
+  },
+  "Footer": {
+    "left": "联系方式",
+    "right": "我们的社交媒体",
+    "place": "Room 301, No. 332, Chengbel Road,\n Choucheng Street, Yiwu City"
+  },
+  "Messages": {
+    "success": "表格已成功提交！",
+    "error": "提交表格时发生错误。"
+  },
+  "Form": {
+    "title": "填写表格",
+    "name": "姓名",
+    "email": "邮箱",
+    "phone": "电话",
+    "submit": "提交",
+    "sending": "提交中...",
+    "placeholders": {
+      "name": "请输入您的姓名",
+      "email": "请输入您的邮箱",
+      "phone": "请输入您的电话号码"
+    }
+  }
+}

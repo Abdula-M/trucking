@@ -23,15 +23,26 @@ body {
 }
 
 
-.swiper-button-next,
-.swiper-button-prev {
-  @apply absolute top-1/2 -translate-y-1/2 text-gray-600 hover:text-gray-800;
+
+@media (max-width: 600px) {
+  .swiper .swiper-button-prev, .swiper .swiper-button-next {
+    width: 5px !important;
+    height: 5px !important;
+  }
+  
+  .swiper .swiper-button-prev::after, .swiper .swiper-button-next::after {
+    font-size: 22px !important;
+  }
+
+  .swiper-button-prev {
+    left: -200px;
+  }
+
+  .swiper-button-next {
+    right: -20px;
+  }
+  
 }
 
-.swiper-button-next {
-  @apply right-[-30px];
-}
 
-.swiper-button-prev {
-  @apply left-[-30px];
-}
+

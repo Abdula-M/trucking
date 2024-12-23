@@ -8,15 +8,15 @@ interface ProductProps {
 
 const ProductCard: React.FC<ProductProps> = ({ image, title, description }) => {
   return (
-    <div className="flex items-centre w-[1110px] h-[650px] bg-white shadow-xl rounded-[20px] relative mx-auto">
-        <div className="w-[555px] px-[50px] py-[100px] my-auto">
-                <Image className="rounded-[20px] w-[450px] h-[450px] object-cover " src={image} alt={title} width={450} height={450}/>
+    <div className="flex md:flex-row flex-col items-centre xl:w-[1110px] xl:h-[650px] lg:w-[800px] lg:h-[450px] md:w-[580px] md:h-[350px] w-[320px] h-[400px] bg-white shadow-xl rounded-[20px] relative mx-auto">
+        <div className="xl:w-[555px] xl:px-[50px] xl:py-[100px] lg:px-[30px] md:px-[25px] my-auto">
+                <Image className="my-auto mx-auto rounded-[20px] xl:w-[450px] xl:h-[450px] lg:w-[350px] lg:h-[350px] md:w-[250px] md:h-[250px] w-full h-[200px] object-cover " src={image} alt={title} width={450} height={450}/>
         </div>
-        <div className="z-10 mt-[170px] px-[50px]">
-            <div className="text-[29px] font-[600] text-start text-[#252b43] leading-[48px]">{title}</div>
-            <div className="text-[14px] font-[400] text-start text-[#252b43] leading-[42px] mt-[10px] opacity-90" dangerouslySetInnerHTML={{ __html: description }} />
+        <div className="z-10 xl:mt-[170px] lg:mt-[100px] md:mt-[60px] mt-0 xl:px-[50px] lg:px-[30px] md:px-[10px] md:pr-[25px] p-[20px] pt-0 md:w-1/2">
+            <div className="lg:text-[29px] md:text-[25px] font-[600] text-start text-[#252b43] leading-[48px]">{title}</div>
+            <div className="lg:text-[20px] md:text-[16px] font-[400] text-start text-[#252b43] xl:leading-[42px] lg:leading-[32px]  lg:mt-[10px] md:mt-[2px] opacity-90" dangerouslySetInnerHTML={{ __html: description }} />
         </div>
-        <div className="absolute top-0 right-0 bg-[#05caa5] w-1/2 inset-y-0 rounded-r-[20px]"></div>
+        <div className="md:block hidden absolute top-0 right-0 bottom-0 bg-[#05caa5] w-1/2 inset-y-0 rounded-r-[20px]"></div>
     </div>
    
   );

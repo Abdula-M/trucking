@@ -1,40 +1,31 @@
-import Image from "next/image";
-import { Header } from "../../header/Header";
 import ServiceCard from "@/components/serviceCard/ServiceCard";
 import PostCard from "@/components/postCard/PostCard";
+import { useTranslations } from "next-intl";
 
-export default function ServicesSection() {
+interface ServicesSectionProps {
+    onOpenModal: () => void;
+  }
+
+export default function ServicesSection({ onOpenModal }: ServicesSectionProps) {
+    const t = useTranslations("ServicesSection");
   return (
-    <div className="bg-[#f3fffd] h-full">
-        <div className="bg-[#f3fffd] h-[1133px] relative px-[230px]">
-            <h2 className="p-6 text-[40px] text-[#252b43] text-center font-montserrat font-extrabold leading-[57px]">Услуги компании</h2>
-            <div className="flex justify-center items-center gap-[125px] flex-wrap mt-[60px]">
-                <ServiceCard image="/tech.svg" title="Спецтехника" description="Техника специального назначения"/>
-                <ServiceCard image="/tech.svg" title="Станки" description="• Оперативное закрытие срочных перевозок  <br />• Три вида аукционов: на понижение, первого согласия, без стартовой цены"/>
-                <ServiceCard image="/car.svg" title="Автомобили" description="•	Фиксация и учет договорных условий  <br />• Автоматизация логистических процессов  <br />• Возможность настройки под конкретные задачи"/>
-                <ServiceCard image="/radar.svg" title="и другое..." description="Все виды отслеживания: <br />• Бортовые блоки  <br />• GSM-связь  <br />• Мобильное приложение"/>
+    <div className="bg-[#f3fffd] h-full ">
+        <div className="bg-[#f3fffd] xl:h-[1133px] lg:h-[900px] relative xl:px-[230px] lg:px-[130px]">
+            <h2 className="p-6 md:text-[40px] text-[34px] text-[#252b43] text-center font-montserrat font-extrabold leading-[57px]">{t('title')}</h2>
+            <div className="flex justify-center">
+                <div className="grid md:grid-cols-2 grid-cols-1 md:gap-[125px] gap-[70px]   md:mt-[60px] mt-5 mb-6">
+                    <ServiceCard image="/tech.svg" title={t('services.0.title')} description={t('services.0.description')}/>
+                    <ServiceCard image="/tech.svg" title={t('services.1.title')} description={t('services.1.description')}/>
+                    <ServiceCard image="/car.svg" title={t('services.2.title')} description={t('services.2.description')}/>
+                    <ServiceCard image="/radar.svg" title={t('services.3.title')} description={t('services.3.description')}/>
+                </div>
             </div>
         </div>
-            <div className="bg-[url('/bg_map.png')] bg-contain bg-end bg-no-repeat h-full pb-[200px]">
-                <div className="flex flex-col justify-center items-center pt-[700px] ">
-                    <PostCard image="/truck_card.svg" title="Транспортные тендеры" description="Обеспечим контроль и исполнение бюджета в ТМС <br />  
-                                                                                            Сильнейший аналитический модуль  <br />
-                                                                                            Единый сквозной процесс «Закупки-исполнение» <br />
-                                                                                            Независимость принятых решений <br />
-                                                                                            Работа только с проверенными перевозчиками <br />
-                                                                                            "/>
-                    <PostCard image="/laptop.svg" title="ТMS / Система управления перевозками" description="Контроль всех этапов от закупки до оплаты <br />
-                                                                                            Бесшовная интеграция продуктов в экосистеме ТМС <br />
-                                                                                            Отслеживание статуса заказа онлайн <br />
-                                                                                            Контроль документооборота <br />
-                                                                                            Оперативная обработка отклонений <br />
-                                                                                            "/>
-                    <PostCard image="/sky.svg" title="Трекинг грузов" description="Интеграция с ERP-системой клиентов <br />
-                                                                                        Автоматизация распределения заказов <br />
-                                                                                        Отслеживание изменения статусов <br />
-                                                                                        Возможность гибкой настройки  <br />
-                                                                                        Аудит логистических процессов <br />
-                                                                                            "/>
+            <div className="bg-[url('/bg_map.png')] bg-contain bg-end bg-no-repeat h-full lg:pb-[200px] md:pb-[100px] pb-[120px]">
+                <div className="flex flex-col justify-center items-center xl:pt-[700px] lg:pt-[240px] md:pt-[240px] pt-[100px]">
+                    <PostCard onOpenModal={onOpenModal} image="/truck_card.svg" title={t('posts.0.title')} description={t('posts.0.description')} btn={t('btn')}/>
+                    <PostCard onOpenModal={onOpenModal}  image="/laptop.svg" title={t('posts.1.title')} description={t('posts.0.description')} btn={t('btn')}/>
+                    <PostCard onOpenModal={onOpenModal}  image="/sky.svg" title={t('posts.2.title')} description={t('posts.0.description')} btn={t('btn')}/>
                 </div>
             </div>
             

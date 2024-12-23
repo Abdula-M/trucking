@@ -3,17 +3,19 @@ import Image from "next/image";
 interface PostCardProps {
     image: string;
     title: string;
+    btn: string;
     description: string;
+    onOpenModal: () => void;
 }
 
-const PostCard: React.FC<PostCardProps> = ({ image, title, description }) => {
+const PostCard: React.FC<PostCardProps> = ({ image, title, description, btn, onOpenModal }) => {
   return (
-    <div className="w-[1100px] h-[650px] bg-white  p-[75px] flex flex-col items-start shadow-xl rounded-[20px] mt-[98px] relative">
-        <Image className="absolute top-0 right-0" src={image} alt={title} width={500} height={500}/>
-        <div className="text-[31px] font-[600] text-start text-[#252b43] leading-[46px]">{title}</div>
-        <div className="w-[700px] text-[24px] font-[400] text-start text-[#252b43] leading-[70px] mt-[15px] opacity-90" dangerouslySetInnerHTML={{ __html: description }} />
+    <div className="xl:w-[1100px] xl:h-[650px] lg:w-[900px] lg:h-[450px] md:w-[680px] md:h-[300px] w-[370px] min-h-[280px] bg-white lg:p-[75px] md:p-[40px] p-[22px] flex flex-col items-start shadow-xl rounded-[20px] md:mt-[98px] mt-[70px] overflow-hidden relative ">
+        <Image className="xl:w-[500px] xl:h-[500px] lg:w-[400px] lg:h-[400px] md:w-[300px] md:h-[300px] w-[180px] h-[180px] absolute top-0 md:right-0 right-[-20px]" src={image} alt={title} width={500} height={500}/>
+        <div className="xl:text-[31px] lg:text-[25px] md:text-[22px] text-[18px] font-[600] text-start text-[#252b43] xl:leading-[46px] lg:leading-[30px]">{title}</div>
+        <div className="md:w-[700px] w-[320px] xl:text-[24px] lg:text-[20px] md:text-[16px] text-[14px] font-[400] text-start text-[#252b43] xl:leading-[70px] lg:leading-[45px] md:leading-[26px] mt-[15px] opacity-90" dangerouslySetInnerHTML={{ __html: description }} />
         <div>
-            <button className="mt-[25px] bg-[#05caa5] w-[180px] h-[60px] rounded-full text-white font-bold hover:bg-[#05caa5]/80 active-transform active:scale-95">Подробнее</button>
+            <button onClick={() => onOpenModal()} className="md:mt-[25px] mt-[15px] bg-[#05caa5] xl:w-[180px] lg:w-[150px] xl:h-[60px] lg:h-[45px] md:w-[120px] md:h-[40px] w-[100px] h-[30px] lg:text-[22px] md:text-[14px] text-[14px] rounded-full text-white font-bold hover:bg-[#05caa5]/80 active-transform active:scale-95">{btn}</button>
         </div>
     </div>
    

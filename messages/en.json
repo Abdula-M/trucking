@@ -1,0 +1,99 @@
+{
+  "Header": {
+    "order": "Order",
+    "orderL": "Contact Us"
+  },
+  "MainSection": {
+    "title": "Digital Platform for Freight Transportation",
+    "subtitle": "An Ecosystem of Services for Transport Logistics\nExport | Import",
+    "stats": [
+      {
+        "text": "Over 6,000 carriers already work with us"
+      },
+      {
+        "text": "More than 100,000 trips annually"
+      }
+    ]
+  },
+  "ServicesSection": {
+    "title": "Company Services",
+    "btn": "Learn More",
+    "services": [
+      {
+        "title": "Specialized Equipment",
+        "description": "Equipment for special purposes"
+      },
+      {
+        "title": "Machinery",
+        "description": "\u2022 Fast solutions for urgent transportation needs <br />\u2022 Three types of auctions: descending, first agreement, no starting price"
+      },
+      {
+        "title": "Vehicles",
+        "description": "\u2022 Contract terms recording and tracking <br />\u2022 Logistics process automation <br />\u2022 Flexible customization options for specific tasks"
+      },
+      {
+        "title": "And more...",
+        "description": "All tracking methods: <br />\u2022 Onboard devices <br />\u2022 GSM communication <br />\u2022 Mobile application"
+      }
+    ],
+    "posts": [
+      {
+        "title": "Transport Tenders",
+        "description": "Ensuring budget control and execution in TMS <br />\nAdvanced analytical module <br />\nEnd-to-end process \"Procurement-Execution\" <br />\nIndependence in decision-making <br />\nCollaboration with trusted carriers only"
+      },
+      {
+        "title": "TMS / Transportation Management System",
+        "description": "Control of all stages from procurement to payment <br />\nSeamless integration of products within the TMS ecosystem <br />\nOnline order status tracking <br />\nDocument workflow control <br />\nQuick handling of deviations"
+      },
+      {
+        "title": "Cargo Tracking",
+        "description": "Integration with clients' ERP systems <br />\nAutomated order distribution <br />\nStatus updates tracking <br />\nFlexible customization options <br />\nLogistics process audit"
+      }
+    ]
+  },
+  "ProductSection": {
+    "title": "Platform Products",
+    "products": [
+      {
+        "title": "Export",
+        "description": "Our service facilitates exporting goods to various countries, ensuring efficient logistics solutions and compliance with all international standards."
+      },
+      {
+        "title": "Tractor",
+        "description": "We offer high-quality tractors designed to ensure reliable operation in agriculture and construction projects, maximizing productivity."
+      },
+      {
+        "title": "Machinery",
+        "description": "Our manufacturing machinery guarantees precision, durability, and high efficiency, enabling better product quality."
+      },
+      {
+        "title": "Manufacturing",
+        "description": "We produce various goods using modern technologies and innovative approaches to ensure high quality and competitive pricing."
+      }
+    ]
+  },
+  "Footer": {
+    "left": "Contacts",
+    "right": "Our Social Media",
+    "place": "Room 301, No. 332, Chengbel Road,\n Choucheng Street, Yiwu City"
+  },
+  
+  "Messages": {
+    "success": "The form has been successfully submitted!",
+    "error": "An error occurred while submitting the form."
+  },
+  "Form": {
+    "title": "Fill out the form",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "submit": "Submit",
+    "sending": "Submitting...",
+    "placeholders": {
+      "name": "Enter your name",
+      "email": "Enter your email",
+      "phone": "Enter your phone number"
+    }
+  }
+  
+}
