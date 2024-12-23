@@ -10,7 +10,7 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({ onOpenModal }) => {
     const t = useTranslations("Header");
    return (
-    <div className="md:py-7 py-2 lg:px- md:px-[50px] px-[20px]">
+    <div className="md:py-7 py-4 md:px-[50px] px-[20px]">
         <ol className="flex justify-between items-center">
             <li><Image className="md:w-[76px] md:h-[40px] lg:w-[83px] lg:h-[40px] xl:w-[93px] xl:h-[48px] w-[60px] h-[40px]" src="/logo.svg" alt="logo" width={93} height={48}/></li>
             <div className="flex  md:flex-row justify-between items-center md:gap-7 gap-3">
