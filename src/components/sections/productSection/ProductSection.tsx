@@ -46,16 +46,9 @@ export default function ProductSection() {
             </SwiperSlide>
             <SwiperSlide>
             <ProductCard
-                image="/machine.png"
+                image="/production.png"
                 title={t('products.2.title')}
                 description={t('products.2.description')}
-            />
-            </SwiperSlide>
-            <SwiperSlide>
-            <ProductCard
-                image="/production.png"
-                title={t('products.3.title')}
-                description={t('products.3.description')}
             />
             </SwiperSlide>
         </Swiper>

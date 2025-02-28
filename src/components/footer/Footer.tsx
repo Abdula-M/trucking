@@ -10,7 +10,7 @@ const Footer = () => {
                 <h2 className="xl:text-[40px] lg:text-[30px] md:text-[20px] font-bold leading-[57px]">{t('left')}</h2>
                 <ol className="xl:mt-[30px] lg:mt-[20px]">
                     <li className="flex justify-start items-center xl:text-[28px] lg:text-[20px] md:text-[14px] text-[12px] font-bold">
-                        <Image className="xl:w-[40px] xl:h-[40px] lg:w-[30px] lg:h-[30px] md:w-[20px] md:h-[20px] w-[20px] h-[20px]" src="/phone.svg" alt="phone" width={40} height={40}/><span className="ml-2">158 5791 3337</span>
+                        <Image className="xl:w-[40px] xl:h-[40px] lg:w-[30px] lg:h-[30px] md:w-[20px] md:h-[20px] w-[20px] h-[20px]" src="/phone.svg" alt="phone" width={40} height={40}/><span className="ml-2"><a href="tel:15857913337">158 5791 3337</a></span>
                     </li>
                     <li className="flex justify-start items-center xl:mt-[25px] lg:mt-[20px] md:mt-[10px] xl:text-[28px] lg:text-[20px] md:text-[14px] text-[12px]  font-bold xl:w-[515px] lg:w-[315px] md:w-[280px] w-[200px] ">
                         <Image className="xl:w-[40px] xl:h-[40px] lg:w-[30px] lg:h-[30px] md:w-[20px] md:h-[20px] w-[20px] h-[20px]" src="/place.svg" alt="place" width={40} height={40}/><span className="ml-2">{t('place')}</span>
@@ -18,7 +18,7 @@ const Footer = () => {
                     <li className="flex justify-start items-center xl:mt-[25px] lg:mt-[20px] md:mt-[10px] xl:text-[28px] lg:text-[20px] md:text-[14px] text-[12px] font-bold">
                         <Image className="xl:w-[40px] xl:h-[40px] lg:w-[30px] lg:h-[30px] md:w-[20px] md:h-[20px] w-[20px] h-[20px]" src="/email.svg" alt="email" width={40} height={40}/>
                         <span className="ml-2">
-                        <a href="mailto:max8108@mail.ru">max8108@mail.ru</a>
+                        <a href="cn.maoshu@yandex.ru">cn.maoshu@yandex.ru</a>
                         </span>
                     </li>
                 </ol>
@@ -32,7 +32,7 @@ const Footer = () => {
                     </li>
                     <li className="flex justify-start items-center xl:mt-[35px] lg:mt-[20px] md:mt-[10px] mt-[10px] xl:text-[28px] lg:text-[20px] md:text-[14px] text-[12px] font-bold">
                         <Image className="xl:w-[40px] xl:h-[40px] lg:w-[30px] lg:h-[30px] md:w-[20px] md:h-[20px] w-[20px] h-[20px] " src="/whatsapp.svg" alt="whatsapp" width={40} height={40}/>
-                        <span className="ml-2"><a href="tel:+79880224444">+7 988 022 44 44</a> </span>
+                        <span className="ml-2"><a href="https://wa.me/79880224444">+7 988 022 44 44</a> </span>
                     </li>
                 </ol>
             </div>

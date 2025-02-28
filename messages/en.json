@@ -5,13 +5,13 @@
   },
   "MainSection": {
     "title": "Digital Platform for Freight Transportation",
-    "subtitle": "An Ecosystem of Services for Transport Logistics\nExport | Import",
+    "subtitle": "Ecosystem of Services for Transport Logistics\nExport | Import",
     "stats": [
       {
-        "text": "Over 6,000 carriers already work with us"
+        "text": "Over 6,000 carriers are already working with us"
       },
       {
-        "text": "More than 100,000 trips annually"
+        "text": "Over 100,000 flights per year"
       }
     ]
   },
@@ -20,34 +20,34 @@
     "btn": "Learn More",
     "services": [
       {
-        "title": "Specialized Equipment",
-        "description": "Equipment for special purposes"
+        "title": "Special Equipment",
+        "description": "Special-purpose machinery"
       },
       {
-        "title": "Machinery",
-        "description": "\u2022 Fast solutions for urgent transportation needs <br />\u2022 Three types of auctions: descending, first agreement, no starting price"
+        "title": "Machines",
+        "description": "• Quick closure of urgent shipments <br />• Three types of auctions: descending, first consent, no starting price"
       },
       {
-        "title": "Vehicles",
-        "description": "\u2022 Contract terms recording and tracking <br />\u2022 Logistics process automation <br />\u2022 Flexible customization options for specific tasks"
+        "title": "Cars",
+        "description": "• Fixation and accounting of contractual terms <br />• Automation of logistics processes <br />• Customization for specific tasks"
       },
       {
         "title": "And more...",
-        "description": "All tracking methods: <br />\u2022 Onboard devices <br />\u2022 GSM communication <br />\u2022 Mobile application"
+        "description": "All types of tracking: <br />• Onboard units <br />• GSM communication <br />• Mobile app"
       }
     ],
     "posts": [
       {
-        "title": "Transport Tenders",
-        "description": "Ensuring budget control and execution in TMS <br />\nAdvanced analytical module <br />\nEnd-to-end process \"Procurement-Execution\" <br />\nIndependence in decision-making <br />\nCollaboration with trusted carriers only"
+        "title": "Transportation of Automotive Vehicles",
+        "description": "• Delivery of automotive vehicles <br />• Wide selection of cars at affordable prices <br />• Delivery by various methods"
       },
       {
-        "title": "TMS / Transportation Management System",
-        "description": "Control of all stages from procurement to payment <br />\nSeamless integration of products within the TMS ecosystem <br />\nOnline order status tracking <br />\nDocument workflow control <br />\nQuick handling of deviations"
+        "title": "Export / Import of Industrial Goods",
+        "description": "• We deliver industrial goods <br />• We calculate the cost of transportation <br />• We deliver to your city within the specified time"
       },
       {
-        "title": "Cargo Tracking",
-        "description": "Integration with clients' ERP systems <br />\nAutomated order distribution <br />\nStatus updates tracking <br />\nFlexible customization options <br />\nLogistics process audit"
+        "title": "Feedback During Transportation",
+        "description": "• We promptly inform you about the status of your cargo. <br />• Accurately calculate arrival time. <br />• Your cargo is under control — we are always in touch. <br />"
       }
     ]
   },
@@ -55,31 +55,26 @@
     "title": "Platform Products",
     "products": [
       {
-        "title": "Export",
-        "description": "Our service facilitates exporting goods to various countries, ensuring efficient logistics solutions and compliance with all international standards."
+        "title": "Car Export",
+        "description": "Our service helps export goods to various countries, providing efficient logistics solutions and compliance with all international standards."
       },
       {
-        "title": "Tractor",
-        "description": "We offer high-quality tractors designed to ensure reliable operation in agriculture and construction projects, maximizing productivity."
+        "title": "Special Equipment Export",
+        "description": "We offer professional services for exporting special equipment to various countries worldwide. Our company provides a full cycle of supply organization: from equipment selection and documentation to delivery and customs clearance."
       },
       {
-        "title": "Machinery",
-        "description": "Our manufacturing machinery guarantees precision, durability, and high efficiency, enabling better product quality."
-      },
-      {
-        "title": "Manufacturing",
-        "description": "We produce various goods using modern technologies and innovative approaches to ensure high quality and competitive pricing."
+        "title": "Factory and Special Equipment",
+        "description": "We import special equipment from China and CIS countries for your enterprise, ensuring high productivity and quality."
       }
     ]
   },
   "Footer": {
     "left": "Contacts",
     "right": "Our Social Media",
-    "place": "Room 301, No. 332, Chengbel Road,\n Choucheng Street, Yiwu City"
+    "place": "Chengbei Road, No.332, Yiwu Jinhua Zhejiang China"
   },
-  
   "Messages": {
-    "success": "The form has been successfully submitted!",
+    "success": "Form submitted successfully!",
     "error": "An error occurred while submitting the form."
   },
   "Form": {
@@ -88,12 +83,11 @@
     "email": "Email",
     "phone": "Phone",
     "submit": "Submit",
-    "sending": "Submitting...",
+    "sending": "Sending...",
     "placeholders": {
       "name": "Enter your name",
       "email": "Enter your email",
-      "phone": "Enter your phone number"
+      "phone": "Enter your phone"
     }
   }
-  
 }
