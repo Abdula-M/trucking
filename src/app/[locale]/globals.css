@@ -44,5 +44,12 @@ body {
   
 }
 
+@media (prefers-color-scheme: dark) {
+  input, textarea {
+    color: black !important;
+    background-color: white !important;
+  }
+}
+
 
 
