@@ -9,12 +9,12 @@ interface ModalFormProps {
 const Modal: FC<ModalFormProps> = ({ isOpen, onClose }) => {
   const t = useTranslations("Messages");
   const f = useTranslations("Form");
-  const [formData, setFormData] = useState({ name: "", email: "", phone: "" });
+  const [formData, setFormData] = useState({ name: "", email: "", phone: "", description: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
 
   // Обновление полей формы
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target;
     setFormData((prev) => ({ ...prev, [id]: value }));
   };
@@ -119,6 +119,25 @@ const Modal: FC<ModalFormProps> = ({ isOpen, onClose }) => {
               onChange={handleChange}
               className="mt-1 block w-full rounded-md outline-none border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
               placeholder={f('placeholders.phone')}
+              required
+            />
+          </div>
+
+          <div>
+            <label
+              htmlFor="description"
+              className="block text-sm font-medium text-gray-700"
+            >
+              {f('description')}
+            </label>
+            <textarea
+              id="description"
+              name="data[description]"
+              value={formData.description}
+              onChange={handleChange}
+              className="mt-1 block w-full rounded-md outline-none border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 resize-y"
+              placeholder={f('placeholders.description')}
+              rows={3} 
               required
             />
           </div>

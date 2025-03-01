@@ -80,14 +80,17 @@
   "Form": {
     "title": "填写表单",
     "name": "姓名",
-    "email": "邮箱",
+    "email": "电子邮件",
     "phone": "电话",
+    "description": "评论",
     "submit": "提交",
     "sending": "发送中...",
     "placeholders": {
-      "name": "请输入您的姓名",
-      "email": "请输入您的邮箱",
-      "phone": "请输入您的电话"
+        "name": "请输入您的姓名",
+        "email": "请输入您的电子邮件",
+        "phone": "请输入您的电话",
+        "description": "我们能帮您什么？"
     }
-  }
+}
+
 }

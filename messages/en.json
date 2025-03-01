@@ -82,12 +82,15 @@
     "name": "Name",
     "email": "Email",
     "phone": "Phone",
+    "description": "Comment",
     "submit": "Submit",
     "sending": "Sending...",
     "placeholders": {
-      "name": "Enter your name",
-      "email": "Enter your email",
-      "phone": "Enter your phone"
+        "name": "Enter your name",
+        "email": "Enter your email",
+        "phone": "Enter your phone",
+        "description": "How can we help?"
     }
-  }
+}
+
 }
